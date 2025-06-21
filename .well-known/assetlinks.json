@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.budsapp.customer",
+      "sha256_cert_fingerprints": [
+        "44:E9:74:70:62:13:B0:7D:5C:E7:CF:07:11:6F:FB:F6:E4:5B:66:66:3B:7A:57:B8:AD:80:2D:4C:D5:55:57:5A"
+      ]
+    }
+  }
+]
