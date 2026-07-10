@@ -169,12 +169,26 @@
   @media (max-width: 860px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
   .feature-card {
+    position: relative;
     background: var(--cream);
     border-radius: var(--radius-md);
     padding: 30px 26px;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
   .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .soon-badge {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: var(--dark);
+    color: var(--primary);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
   .feature-icon {
     width: 52px;
     height: 52px;
@@ -357,6 +371,7 @@
         </div>
 
         <div class="feature-card">
+          <span class="soon-badge">Coming Soon</span>
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18l-1.5 12H4.5L3 3z"/><path d="M8 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
           </div>
@@ -373,6 +388,7 @@
         </div>
 
         <div class="feature-card">
+          <span class="soon-badge">Coming Soon</span>
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           </div>
@@ -381,6 +397,7 @@
         </div>
 
         <div class="feature-card">
+          <span class="soon-badge">Coming Soon</span>
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
@@ -389,6 +406,7 @@
         </div>
 
         <div class="feature-card">
+          <span class="soon-badge">Coming Soon</span>
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
           </div>
