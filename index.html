@@ -257,6 +257,9 @@
   }
   .store-btn .store-icon { width: 26px; height: 26px; }
   .store-btn small { display: block; font-weight: 500; font-size: 0.7rem; opacity: 0.8; }
+  .store-btn.store-btn--active { opacity: 1; cursor: pointer; text-decoration: none; }
+  .store-btn.store-btn--active:hover { opacity: 0.85; }
+  .store-note { margin-top: 12px; font-size: 0.85rem; opacity: 0.75; }
   .store-btn span.badge {
     position: absolute;
     top: -10px; right: -10px;
@@ -319,6 +322,7 @@
       <a href="privacy.html">Privacy</a>
     </nav>
     <div class="nav-cta">
+      <a href="https://app.budsapp.ca" class="btn btn-outline" style="padding:10px 20px;">Open App</a>
       <a href="#download" class="btn btn-primary" style="padding:10px 20px;">Get the App</a>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">
         <span></span><span></span><span></span>
@@ -502,15 +506,16 @@
             App Store
           </span>
         </div>
-        <div class="store-btn">
+        <a class="store-btn store-btn--active" href="https://budsapp.ca/downloads/budsapp-customer-1.7.71.apk" download>
           <span class="badge">Soon</span>
           <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.6.32-1.13.83-1.42l10.7 10.42-10.7 9.42c-.5-.28-.83-.82-.83-1.42zM17.1 12.5l2.65-2.5-11.9-8L17.1 12.5zM17.1 12.5L7.85 21.5l11.9-8-2.65-1zM20.16 9.1c.53.3.84.85.84 1.4s-.31 1.1-.84 1.4l-2.06 1.2-2.9-2.6 2.9-2.6 2.06 1.2z"/></svg>
           <span>
             <small>Get it on</small>
             Google Play
           </span>
-        </div>
+        </a>
       </div>
+      <p class="store-note">Buds isn't on Google Play yet — tap above to download the Android app directly.</p>
     </div>
   </section>
 
